@@ -12,7 +12,7 @@ public class ${NAME}
 	public static void solve()
 	{
 	    
-		out.println("");
+		
 		
 	}
 
@@ -32,7 +32,7 @@ public class ${NAME}
 		out.close();
 	}
 	
-	//reader by Egor Kulikov
+	//reader by Petr Mitrichev
 	static class InputReader
 	{
 		public BufferedReader reader;
