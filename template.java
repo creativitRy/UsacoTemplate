@@ -27,7 +27,7 @@ public class ${NAME}
 		solve();
 		
 		long endTime = System.currentTimeMillis();
-		System.out.printf("Took %.2f sec", (endTime - startTime) / 1000.0);
+		System.out.printf("Took %.2f sec\n", (endTime - startTime) / 1000.0);
 
 		out.close();
 	}
@@ -50,9 +50,6 @@ public class ${NAME}
 			tokenizer = null;
 		}
 
-		/**
-		 * If at end of file, will repeat to start at start of file
-		 */
 		public String next()
 		{
 			while (tokenizer == null || !tokenizer.hasMoreTokens())
@@ -81,6 +78,25 @@ public class ${NAME}
 		public long nextLong()
 		{
 			return Long.parseLong(next());
+		}
+		
+		/**
+		 * When you call next(), that entire line will be skipped.
+		 * No flushing buffers.
+		 * Doesn't work when you want to scan the remaining line.
+		 * @return entire line
+		 */
+		public String nextLine()
+		{
+			String str = "";
+			try
+			{
+				str = reader.readLine();
+			} catch (IOException e)
+			{
+				throw new RuntimeException(e);
+			}
+			return str;
 		}
 	}
 }
