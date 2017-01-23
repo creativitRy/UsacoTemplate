@@ -32,7 +32,10 @@ public class ${NAME}
 		out.close();
 	}
 	
-	//reader by Petr Mitrichev
+	/**
+	 * @author Petr Mitrichev
+	 * @author Gahwon Lee
+	 */
 	static class InputReader
 	{
 		public BufferedReader reader;
@@ -92,6 +95,7 @@ public class ${NAME}
 			try
 			{
 				str = reader.readLine();
+				tokenizer = null;
 			} catch (IOException e)
 			{
 				throw new RuntimeException(e);
