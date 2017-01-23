@@ -7,7 +7,7 @@ The template I use for usaco training. Put in Intellij to work
 3. Editor -> File and Code Templates
 4. Create Template
 5. Paste in code
-6. Change USERNAME_GOES_HERE to your user name
+6. Change USERNAME_GOES_HERE to your username
 
 ### How to use
 * To make a new file, go to new -> code template name -> enter in name (lowercase)
@@ -17,5 +17,5 @@ The template I use for usaco training. Put in Intellij to work
 
 ### Features
 * Shows how long your solution took
-* Efficient input as used by Egor Kulikov
+* Efficient input as used by Petr Mitrichev
 * One uncluttered method to put your solution in
